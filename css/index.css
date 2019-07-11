@@ -2,6 +2,7 @@
 .head{padding: 20px;display: flex;margin-top: 20px;margin-right:20px;margin-left:100px;margin-right:100px;margin-bottom:20px;box-sizing: border-box;background-color: #C0C5CB;}
 .head_img{width: 50%;display: flex;align-content: center;justify-content: center;margin-right: 20px;}
 .head_img img{width: 100%;border-radius: 5px;}
+.head_lr{width: 40%;}
 .head_lr_xm{border-bottom: 2px solid #000000;width: 50px;}
 .head_lr_pj{margin-top: 20px;padding-right: 20px;}
 .jczl{display: flex;}
