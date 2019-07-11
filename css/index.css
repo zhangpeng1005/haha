@@ -4,9 +4,12 @@
 }
 .head{
 	display: flex;
+	padding: 10px;
+	background-color: #C0C5CB;
 }
 .head_img{
 	width: 20%;
+	margin-right: 10px;
 }
 .head_lr{
 	width: 80%;
@@ -18,7 +21,7 @@
 	width: 50%;
 }
 .jbxx_gzjy{
-	width: 50%;
+	width: 100%;
 }
 .jbxx2{
 	display: flex;
