@@ -10,6 +10,7 @@
 .head_img{
 	width: 20%;
 	margin-right: 10px;
+	box-sizing: border-box;
 }
 .head_lr{
 	width: 80%;
