@@ -42,7 +42,7 @@
 				<div class="jbxx_gzjy">
 					<span class="icon iconfont icon-gongzuojingyan" style="font-size: 10px;color: red;">工作经验：</span>
 					<span style="font-size: 8px;">
-						JAVA开发<span id="jy"></span>年
+						JAVA开发<span id="jy"></span>年<span id="month"></span>个月
 						（材料科学与工程2年）
 					</span>
 				</div>
@@ -136,6 +136,9 @@
     	//年龄
     	var nl = document.getElementById("nl");
     	nl.innerHTML=date.getFullYear()-1990;
+		//月
+		var month = document.getElementById("month");
+		month.innerHTML=date.getMonth();
     </script>
 </body>
 </html>
