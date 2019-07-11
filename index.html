@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/demo.css" />
-		<link rel="stylesheet" href="css/iconfont.css" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+	<link rel="stylesheet" href="css/demo.css" />
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/index.css" />
 	</head>
 <body>
     <header class="head">
     	<div class="head_img">
-    		<img src="img/4FD646A1C792EB1F32FC4FE50E237AAC.jpg">
+    		<img src="img/4FD646A1C792EB1F32FC4FE50E237AAC.jpg" style="width: 100%;">
     	</div>
     	<div class="head_lr">
-    		<div class="head_lr_xm">张&nbsp;&nbsp;朋</div>
+    		<div class="head_lr_xm" style="font-size: 10px;">张&nbsp;&nbsp;朋</div>
     		<div class="head_lr_pj">
-    			<div style="margin-bottom: 20px;">自我评价</div>
-    			本人性格开朗、稳重、有活力，待人热情、真诚；工作认真负责，积极主动，能吃苦耐劳，用于承受压力，勇于创新；有很强的组织能力和团队协作精神，具有较强的适应能力；纪律性强，工作积极配合；意志坚强，具有较强的无私奉献精神。
+    			<div style="font-size: 10px;">自我评价</div>
+    			<div style="font-size: 8px;">本人性格开朗、稳重、有活力，待人热情、真诚；工作认真负责，积极主动，能吃苦耐劳，用于承受压力，勇于创新；有很强的组织能力和团队协作精神，具有较强的适应能力；纪律性强，工作积极配合；意志坚强，具有较强的无私奉献精神。</div>
     			<div class="jbxx">
-    				<div class="jbxx_dh" style="margin-bottom: 20px;"><span class="icon iconfont icon-dianhua"></span>&nbsp;&nbsp;电&nbsp;&nbsp;话：18286039313</div>
+    				<div class="jbxx_dh"><span style="font-size: 10px;" class="icon iconfont icon-dianhua">电话：</span><span style="font-size: 8px;">18286039313</span></div>
     				<div class="jbxx_gzjy">
-    					<span class="icon iconfont icon-gongzuojingyan"></span>&nbsp;&nbsp;工作经验：JAVA开发<span id="jy"></span>年
-    					（材料科学与工程2年）
-    				</div>
-    				<div class="jbxx_zs">
-    					<span class="icon iconfont icon-nianling"></span>&nbsp;&nbsp;年&nbsp;&nbsp;龄：<span id="nl"></span>
+    					<span class="icon iconfont icon-gongzuojingyan" style="font-size: 10px;">工作经验：</span>
+						<span style="font-size: 8px;">
+							JAVA开发<span id="jy"></span>年
+							（材料科学与工程2年）
+						</span>
     				</div>
     			</div>
     			<div class="jbxx2">
-    				<div class="jbxx2_yx"><span class="icon iconfont icon-youxiang-"></span>&nbsp;&nbsp;邮&nbsp;&nbsp;箱：872055049@qq.com</div>
-    				<div class="jbxx2_dz"><span class="icon iconfont icon-zhuzhi"></span>&nbsp;&nbsp;现居住地址：白云区刘庄村</div>
+					<div class="jbxx_zs">
+						<span class="icon iconfont icon-nianling" style="font-size: 10px;">年龄：</span><span style="font-size: 8px;" id="nl"></span>
+					</div>
+    				<div class="jbxx2_yx"><span  style="font-size: 10px;" class="icon iconfont icon-youxiang-">邮箱：</span><span style="font-size: 8px;">872055049@qq.com</span></div>
     			</div>
+				<div class="jbxx2">
+					<div><span class="icon iconfont icon-zhuzhi" style="font-size: 10px;">现居住地址：</span><span style="font-size: 8px;">白云区刘庄村</span></div>
+				</div>
     		</div>
     	</div>
     </header>
@@ -41,33 +55,33 @@
     		</div>
     		<div class="ly_yx_nr" style="width: 100px;margin-top: 10px;">
     			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px;"><span class="icon iconfont icon-yk_yuanquan_fill"></span>从事职业</div>
-    			<div style="color: #949494;margin-bottom: 10px">JAVA工程师</div>
+    			<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">JAVA工程师</div>
     			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>期望月薪</div>
-    			<div style="color: #949494;">8K-12K</div>
+    			<div style="color: #949494;font-size: 10px;">8K-12K</div>
     		</div>
     	</div>
     	<div class="ly_bj">
     		<div style="width: 100px;background-color: #8A98A1;color: white;margin-bottom: 10px">
     			教育背景&nbsp;&nbsp;<span class="icon iconfont icon-jiaoyubeijing"></span>
     		</div>
-    		<div style="width: 150px;">
+    		<div style="width: 100px;">
     			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>学校名称</div>
-	    		<div style="color: #949494;margin-bottom: 10px">天津工业大学</div>
+	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">天津工业大学</div>
 	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px">就读时间</div>
-	    		<div style="color: #949494;margin-bottom: 10px">2011-9到2015-06</div>
+	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">2011-9到2015-06</div>
 	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>所学专业</div>
-	    		<div style="color: #949494;">材料科学与工程</div>
+	    		<div style="color: #949494;font-size: 10px;">材料科学与工程</div>
     		</div>
 	    </div>
     	<div class="ly_zs">
     		<div style="width: 100px;background-color: #8A98A1;color: white;margin-bottom: 10px">
     			证书&nbsp;&nbsp;<span class="icon iconfont icon-zhengshu"></span>
     		</div>
-    		<div style="width: 120px;">
+    		<div style="width: 100px;">
     			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>证书名称</div>
-	    		<div style="color: #949494;margin-bottom: 10px">JAVA初级证书</div>
+	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">JAVA初级证书</div>
 	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>获得时间</div>
-	    		<div style="color: #949494;">2017-03</div>
+	    		<div style="color: #949494;font-size: 10px;">2017-03</div>
     		</div>
     	</div>
     </div>
@@ -76,7 +90,7 @@
     	时间：2019-07-11
     	描述：专业技能
     -->
-    <div class="zyjn">
+    <div class="zyjn" style="padding: 10px;">
     	<div class="zyjn_zuo" style="color: red;font-size: 28px;">专业技能：</div>
     	<div class="zyjn_zhong">前端技能==>熟练掌握Html,CSS,JavaScript,Vuejs，Bootstrap等前端开发技术</div>
     	<div class="zyjn_you">后台技能==>JAVA,Spring Boot,Mysql,Mybatis,Jsp,Thymeleaf等</div>
@@ -86,7 +100,7 @@
     	时间：2019-07-11
     	描述：工作经历
     -->
-    <div class="zyjn">
+    <div class="zyjn" style="padding: 10px;">
     	<div class="zyjn_zuo" style="color: red;font-size: 28px;">工作经历：</div>
     	<div class="zyjn_zhong">
     		公司名称：贵州英速尔信息科技有限责任公司
