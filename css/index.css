@@ -1,42 +1,44 @@
-*{
-	padding: 0;
-	margin: 0;
-}
-.head{
-	display: flex;
-	padding: 10px;
-	background-color: #C0C5CB;
-}
-.head_img{
-	width: 20%;
-	margin-right: 10px;
-	box-sizing: border-box;
-}
-.head_lr{
-	width: 80%;
-}
-.jbxx{
-	display: flex;
-}
-.jbxx_dh{
-	width: 50%;
-}
-.jbxx_gzjy{
+*{padding: 0;margin: 0;}
+
+/*轮播图*/
+.navbar{
+	margin-bottom: 0;
+	position: fixed;
+	top: 0;
 	width: 100%;
 }
-.jbxx2{
-	display: flex;
+#lunbo img{
+	width: 100%;
+	height: 300px;
 }
-.jbxx_zs{
-	width: 50%;
+.well p{
+	text-indent: 2em;
 }
-.ly{
-	display: flex;
-	padding: 10px;
+.jieshao p{
+	text-indent: 2em;
 }
-.ly_yx{
-	width: 33%;
+#musicPlayer{
+	width: 100%;
 }
-.ly_bj{
-	width: 33%;
+.glyphicon{
+	cursor: pointer;
+}
+#musicImg{
+	margin: auto;
+	animation: imgRotate 10s linear infinite;
+	animation-play-state: paused;
+}
+@keyframes imgRotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+#bottom{
+	margin-top: 50px;
+	border-top: 1px solid #CCCCCC;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }

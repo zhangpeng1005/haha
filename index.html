@@ -1,144 +1,320 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
-   		});
-   		
-    </script>
-	<link rel="stylesheet" href="css/demo.css" />
-	<link rel="stylesheet" href="css/iconfont.css" />
-	<link rel="stylesheet" href="css/index.css" />
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</head>
-<body>
-    <header class="head">
-    	<div class="head_img">
-    		<img src="img/4FD646A1C792EB1F32FC4FE50E237AAC.jpg" style="width: 100%;">
-    	</div>
-    	<div class="head_lr">
-    		<div class="head_lr_xm" style="color: red;font-weight: 500;">张&nbsp;&nbsp;朋</div>
-    		<div class="head_lr_pj">
-    			<div style="font-size: 10px;color: green;">自我评价</div>
-    			<div style="font-size: 8px;padding-left: 10px;">本人性格开朗、稳重、有活力，待人热情、真诚；工作认真负责，积极主动，能吃苦耐劳，用于承受压力，勇于创新；有很强的组织能力和团队协作精神，具有较强的适应能力；纪律性强，工作积极配合；意志坚强，具有较强的无私奉献精神。</div>
-    			<div class="jbxx">
-    				<div class="jbxx_dh"><span style="font-size: 10px;color: red;" class="icon iconfont icon-dianhua">电话：</span><span style="font-size: 8px;">18286039313</span></div>
-    				<div class="jbxx2">
-    					<div><span class="icon iconfont icon-zhuzhi" style="font-size: 10px;color: red;">现居住地址：</span><span style="font-size: 8px;">白云区刘庄村</span></div>
-    				</div>
-    			</div>
-    			<div class="jbxx2">
-					<div class="jbxx_zs">
-						<span class="icon iconfont icon-nianling" style="font-size: 10px;color: red;">年龄：</span><span style="font-size: 8px;" id="nl"></span><span style="font-size: 8px;">岁</span>
-					</div>
-    				<div class="jbxx2_yx"><span  style="font-size: 10px;color: red;" class="icon iconfont icon-youxiang-">邮箱：</span><span style="font-size: 8px;">872055049@qq.com</span></div>
-    			</div>
-				
-				<div class="jbxx_gzjy">
-					<span class="icon iconfont icon-gongzuojingyan" style="font-size: 10px;color: red;">工作经验：</span>
-					<span style="font-size: 8px;">
-						JAVA开发<span id="jy"></span>年<span id="month"></span>个月
-						（材料科学与工程2年）
-					</span>
+
+	<body>
+		<!--
+        	作者：872055049@qq.com
+        	时间：2019-07-29
+        	描述：导航
+       -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+					<a class="navbar-brand" href="#">花千骨</a>
 				</div>
-    		</div>
-    	</div>
-    </header>
-    <div class="ly">
-    	<div class="ly_yx">
-    		<div style="width: 100px;background-color: #8A98A1; color: white;">
-    			求职意向&nbsp;&nbsp;<span class="icon iconfont icon-qiuzhiyixiang"></span>
-    		</div>
-    		<div class="ly_yx_nr" style="width: 100px;margin-top: 10px;">
-    			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px;"><span class="icon iconfont icon-yk_yuanquan_fill"></span>从事职业</div>
-    			<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">JAVA工程师</div>
-    			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>期望月薪</div>
-    			<div style="color: #949494;font-size: 10px;">8K-12K</div>
-    		</div>
-    	</div>
-    	<div class="ly_bj">
-    		<div style="width: 100px;background-color: #8A98A1;color: white;margin-bottom: 10px">
-    			教育背景&nbsp;&nbsp;<span class="icon iconfont icon-jiaoyubeijing"></span>
-    		</div>
-    		<div style="width: 100px;">
-    			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>学校名称</div>
-	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">天津工业大学</div>
-	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px">就读时间</div>
-	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">2011-9到2015-06</div>
-	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>所学专业</div>
-	    		<div style="color: #949494;font-size: 10px;">材料科学与工程</div>
-    		</div>
-	    </div>
-    	<div class="ly_zs">
-    		<div style="width: 100px;background-color: #8A98A1;color: white;margin-bottom: 10px">
-    			证书&nbsp;&nbsp;<span class="icon iconfont icon-zhengshu"></span>
-    		</div>
-    		<div style="width: 100px;">
-    			<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>证书名称</div>
-	    		<div style="color: #949494;margin-bottom: 10px;font-size: 10px;">JAVA初级证书</div>
-	    		<div style="border-bottom: 1px solid #333333;margin-bottom: 10px"><span class="icon iconfont icon-yk_yuanquan_fill"></span>获得时间</div>
-	    		<div style="color: #949494;font-size: 10px;">2017-03</div>
-    		</div>
-    	</div>
-    </div>
-    <!--
-    	作者：872055049@qq.com
-    	时间：2019-07-11
-    	描述：专业技能
-    -->
-    <div class="zyjn" style="padding: 10px;">
-    	<div class="zyjn_zuo" style="color: red;font-size: 28px;">专业技能：</div>
-    	<div class="zyjn_zhong">前端技能
-			<div style="color: #0086B3;font-size: 15px;padding-left: 10px;">熟练掌握Html,CSS,JavaScript,Vuejs，Bootstrap等前端开发技术</div>
-		</div>
-    	<div class="zyjn_you">后台技能
-			<div style="color: #0086B3;font-size: 15px;padding-left: 10px;">
-				JAVA,SpringBoot,Mysql,Mybatis,Jsp,Thymeleaf等
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">简介 <span class="sr-only">(current)</span></a></li>
+						<li><a href="#renwu">人物</a></li>
+						<li><a href="#yinyue">音乐</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Luanguage <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">中文</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Italy</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--
+        	作者：872055049@qq.com
+        	时间：2019-07-29
+        	描述：轮播图
+        -->
+		<div id="lunbo">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/1.jpg" alt="...">
+						<div class="carousel-caption">
+							...
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/2.jpg" alt="...">
+						<div class="carousel-caption">
+							...
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/3.jpg" alt="...">
+						<div class="carousel-caption">
+							...
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/4.jpg" alt="...">
+						<div class="carousel-caption">
+							...
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/5.jpg" alt="...">
+						<div class="carousel-caption">
+							...
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
-    </div>
-    <!--
-    	作者：872055049@qq.com
-    	时间：2019-07-11
-    	描述：工作经历
-    -->
-    <div class="zyjn" style="padding: 10px;">
-    	<div class="zyjn_zuo" style="color: red;font-size: 28px;">工作经历：</div>
-    	<div class="zyjn_zhong">
-    		公司名称：贵州英速尔信息科技有限责任公司
-    		<div style="color: #949494;padding-left: 10px;color: #0086B3;">职位名称：JAVA开发员</div>
-    		<div style="color: #949494;padding-left: 10px;color: #0086B3;">在职时间：2018-03至今</div>
-    		<div style="color: #949494;padding-left: 10px;color: #0086B3;">税前工资：7K</div>
-    	</div>
-    	<div class="zyjn_you">
-    		项目经验：
-    		<div style="color: #949494;padding-left: 10px;color: #0086B3;">
-    			负责处理目前上线的贵州省实名制管理平台（及时处理客户出现的问题），对原有开发的平台从新开发新平台（内容一样就是重新搭建新架构开发），开发接口传数据到有关部门。
-    		</div>
-    	</div>
-    </div>
-    <!--
-    	作者：872055049@qq.com
-    	时间：2019-07-11
-    	描述：兴趣爱好
-    -->
-    <div></div>
-    <script>
-    	//工作经验
-    	var date = new Date();
-    	var jy = document.getElementById("jy");
-    	jy.innerHTML=date.getFullYear()-2018;
-    	//年龄
-    	var nl = document.getElementById("nl");
-    	nl.innerHTML=date.getFullYear()-1990;
-		//月
-		var month = document.getElementById("month");
-		month.innerHTML=date.getMonth();
-    </script>
-</body>
+		<!--
+        	作者：872055049@qq.com
+        	时间：2019-07-29
+        	描述：电影介绍
+        -->
+		<div class="container">
+			<!--标题-->
+			<div class="page-header">
+				<h1>故事摘要<small>改编fresh果果同名小说</small></h1>
+			</div>
+			<div class="well">
+				<p>
+					Fresh果果所著《花千骨》女主角。她是世间最后一个神，也是百年难得一见的天煞孤星。
+				</p>
+
+				<p>
+					由于身上有着易招引鬼怪的特殊气味，所以自小便被妖魔缠身。出生时，满城鲜花尽数凋零，故取名花千骨。
+				</p>
+				<p>
+					百年难得一见的天煞孤星，出生时满城鲜花尽数凋零、体质招引鬼怪，其父亲死后嘱咐前往茅山。不料茅山满门被屠、机缘巧合下成为茅山派掌门。其间遇见东方彧卿、轩辕朗，并在二人帮助下成功将茅山被屠门消息带到瑶池群仙宴。被白子画带入长留山并约定一年之约。
+				</p>
+				<p>
+					在被茅山弟子云隐带回茅山派时，被杀阡陌所救，误将其错认为姐姐。一年之中，与东方彧卿所给的灵虫糖宝日渐亲密，也与轻水成为要好的朋友。
+				</p>
+
+				<p>
+					在拜师大会中，被霓漫天算计，但也破例成了白子画的唯一之徒。与落十一轻水等人度过了一段快乐的时光。
+				</p>
+
+				<p>
+					次年在与师父游历时被蓝雨澜风（新版蓝羽灰）所害，师父白子画中毒。无奈开始收集神器救师父。在收集神器后，妖神出世，花千骨也被白子画逐去蛮荒。
+				</p>
+				<p>
+					在经历了被所爱之人一次次伤害，爱着自己的人却一个个离开自己后死再也承受不住愧疚，终是要了妖神之力，又一次用自己的灵魂还了自己所爱的世界一个安宁。
+
+				</p>
+				<p>
+					魂飞魄散之际，竹染用性命收回一魄，杀阡陌将这一魄重新轮回转世，不幸由于缺少三魂六魄，转世为人时变的痴傻，后被白子画重新收为徒弟，最后恢复记忆，成了白子画的妻子。
+				</p>
+
+			</div>
+		</div>
+		<!--
+        	作者：872055049@qq.com
+        	时间：2019-07-29
+        	描述：人物介绍
+        -->
+        <a name="renwu">1</a>
+		<div class="container">
+			<!--标题-->
+			<div class="page-header">
+				<h1>人物介绍</small></h1>
+			</div>
+			<div class="alert alert-success jieshao" role="alert">
+				<!--内容一-->
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-lg-4">
+						<img class="img-rounded img-responsive" src="img/baizihua.jpg" />
+					</div>
+					<div class="col-xs-12 col-md-8 col-lg-8">
+						<h1>白子画 （小说《花千骨》男主角）</h1>
+						<p>白子画，fresh果果所著玄幻仙侠小说《花千骨》中的男主角。</p>
+						<p>
+							长留上仙，风霜一剑。白衣描似画，横霜染风华，相貌俊美无瑕。淡然带着冰冷的目光，流泄如水如月华。超凡而孤高，冰凉而淡漠，温润如玉又云淡风轻。仙姿秀逸，孤冷出尘，长发如瀑，眼落星辰，风采翩翩绝世。这世上，怕是再无一画，可以装得下他的仙姿，他的容貌，他的风采，他的气质。修为极其高深，论对手，绝对是最可怕的一个。其师传位于他之时曾说：“子画在，可保长留千年基业，可守仙界百年平安。”一生不负长留，不负六界，不负众生，不负任何人，唯独负了自己的一世韶光。
+						</p>
+					</div>
+				</div>
+				<div class="alert alert-info jieshao" role="alert">
+					<!--内容二-->
+					<div class="row">
+						<div class="col-xs-12 col-md-5 col-lg-8">
+							<h1>花千骨 （小说、仙侠剧《花千骨》女主角）</h1>
+							<p>
+								花千骨，古装玄幻仙侠剧、小说《花千骨》中的女主角，由赵丽颖饰演。花千骨是世间最后一位神的灵魂转世，也是百年一见的天煞孤星，天生无泪；剧版在受消魂钉后，花千骨第一次流下眼泪。
+							</p>
+							<p>
+								花千骨早期为长留上仙白子画的徒弟，后来在经历一系列的转折后突破封印成为妖神，最终设计白子画将自己杀死，并咒白子画不老不死不伤不灭，永远活在失去自己的痛苦中。在花千骨死后摩严以灵换灵救活花千骨，从此以失去记忆为代价与白子画一起游历凡间。
+							</p>
+						</div>
+						<div class="col-xs-12 col-md-4 col-lg-4">
+							<img class="img-rounded img-responsive" src="img/xiaogu.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-warning jieshao" role="alert">
+					<!--内容三-->
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-lg-4">
+							<img class="img-rounded img-responsive" src="img/rw3.jpg" />
+						</div>
+						<div class="col-xs-12 col-md-8 col-lg-8">
+							<h1>杀阡陌 （《花千骨》小说/电视剧中的人物）</h1>
+							<p>
+								杀阡陌是小说《花千骨》和电视剧《花千骨》中的主要角色之一，电视剧中由90后演员马可饰演 [1] 。虽为男子，却拥有令人忽略性别的绝世美貌，他拥有六界第一美男的称号，且爱美成癖。初遇花千骨时，他宛如天神般从天而降的绝美风姿和倾倒众生的绝世容颜，让被救下的她惊呆了：“姐姐好美！就是胸小了点。”一声“姐姐”让杀阡陌想起死去的妹妹琉夏对他的戏称，也不说破。后来花千骨虽然知道了杀阡陌的真实身份，还是按照习惯唤他“杀姐姐”，而杀阡陌生性乖张洒脱，也不纠正，反倒觉得这是对自己容貌的莫大赞美。
+							</p>
+							<p>
+								从不曾伤害花千骨，对她总是细心的爱护、不求回报的付出。为救她，修炼邪功、杀上长留、对抗整个仙界。后因昆仑山仙魔大战时见到不共戴天的仇人——害死琉夏的竹染，仇恨催使他完全入魔，不顾任何阻拦杀红了眼，花纹遍布全身，邪功脱离控制，被体内妖魂反噬，危急时刻花千骨催发妖神之力及时阻止，之后陷入不知何时才会醒来的沉睡。沉睡前对花千骨说：“傻瓜，知道琉夏喜欢竹染我会生气，可是看见你和别的男子在一起，我却是会吃醋啊。”不知不觉，他已经爱上了花千骨。最后，在花千骨即将魂飞魄散时，杀阡陌被她的妖神之力唤醒，带走了花千骨仅剩的一魄，用尽全力助她转世。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="alert alert-danger jieshao" role="alert">
+					<!--内容四-->
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-lg-8">
+							<h1>糖宝</h1>
+							<p>
+								小说《花千骨》和电视剧《花千骨》中的主要角色之一，由演员安悦溪饰演。它是由凤凰眼泪凝结成天水滴，加上花千骨的一滴血孵化而出，是异朽阁的灵虫，靠花千骨的鲜血增长灵力，通晓世间奇事。性格善良可爱，是世上对花千骨最重要的人之一。把东方彧卿当成爹爹，并称其为“爹爹”；将花千骨当成娘亲，并称其为“娘亲”，后化身成为人形，亦为女儿身。喜欢落十一。
+							</p>
+							<p>
+								后花千骨遭到白子画的严重误解强行将她关禁闭，糖宝为救花千骨，在长留海底被怒火中烧的霓漫天一掌打死，（改编版电视剧为在云宫被霓漫天用剑刺死）导致花千骨的洪荒之力爆发，变成妖神。
+							</p>
+						</div>
+						<div class="col-xs-12 col-md-4 col-lg-4">
+							<img class="img-rounded img-responsive" src="img/rw4.jpg" />
+						</div>
+					</div>
+					<div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!--
+        	作者：872055049@qq.com
+        	时间：2019-07-29
+        	描述：唯美音乐
+        -->
+        <a name="yinyue"></a>
+		<div class="container">
+			<div class="page-header">
+				<h1>音乐<small>唯美音乐</small></h1>
+			</div>
+			<!--内容-->
+			<div class="row">
+				<!--左侧-->
+				<div class="clo-xs-12 col-md-3 col-lg-3">
+					<audio onclick="player()" id="musicPlayer" src="audio/huaqinggu.mp3" controls="controls"></audio>
+					<div class="alert alert-info text-center" role="alert">
+						<img id="musicImg" class="img-circle img-responsive" src="img/yinyue.jpg" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-9 col-lg-9">
+					<table class="table table-striped">
+						<thead>
+							<th>歌曲名</th>
+							<th>演唱人</th>
+							<th>类型</th>
+							<th>播放</th>
+						</thead>
+						<tr>
+							<td>不可说</td>
+							<td>霍建华/赵丽颖</td>
+							<td>片尾曲</td>
+							<td>
+								<span class="glyphicon glyphicon-play-circle" data-music="audio/huaqinggu.mp3" data-img="img/yinyue.jpg">
+		        							
+		        						</span>
+							</td>
+						</tr>
+						<tr>
+							<td>花之火</td>
+							<td>彭佳慧/F.I.R</td>
+							<td>片头曲</td>
+							<td>
+								<span class="glyphicon glyphicon-play-circle" data-music="audio/huazhihuo.mp3" data-img="img/music2.jpg">
+		        							
+		        						</span>
+							</td>
+						</tr>
+						<tr>
+							<td>花签</td>
+							<td>青妮</td>
+							<td>插曲</td>
+							<td>
+								<span class="glyphicon glyphicon-play-circle" data-music="audio/huaqian.mp3" data-img="img/music3.jpg">
+		        							
+		        						</span>
+							</td>
+						</tr>
+						<tr>
+							<td>年轮</td>
+							<td>张碧晨</td>
+							<td>插曲</td>
+							<td>
+								<span class="glyphicon glyphicon-play-circle" data-music="audio/nianlun.mp3" data-img="img/music4.jpg">
+		        							
+		        						</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--
+		        	作者：872055049@qq.com
+		        	时间：2019-07-29
+		        	描述：底部
+		        -->
+		<footer id="bottom" class="text-center">
+			版权所有&copy2019
+		</footer>
+	</body>
+
 </html>
